@@ -1,0 +1,76 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+[record]
+command=cat /tmp/recordingicon
+interval=once
+signal=9
+
+[music]
+command=mediaplayer
+label=🎼
+interval=once
+signal=11
+
+[news]
+label=📰
+interval=once
+signal=6
+
+#[iplocate]
+#interval=30
+
+[pacpackages]
+label=📦
+interval=once
+signal=8
+
+[torrent]
+interval=20
+signal=7
+
+[weather]
+interval=18000
+signal=5
+
+[memory]
+interval=30
+label=🧠
+
+#[cpu]
+#interval=15
+#label=💻
+
+[volume]
+interval=once
+signal=10
+
+[disk]
+interval=60
+command=disk /
+
+[disk]
+interval=60
+command=disk /home 🏠
+
+[battery]
+command=battery BAT0
+interval=5
+
+[clock]
+label=📅
+interval=30
+
+# Network Speed
+#
+# Displays the current network speed
+[network_speed]
+interval=1800
+command=wifi_speedtest
+
+[internet]
+interval=10
+
+#[help]
+#interval=once
